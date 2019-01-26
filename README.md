@@ -99,6 +99,12 @@ Open browser and vist  [http://localhost:8000](http://localhost:8000)
 ```
 ## Output Screenshots
 * Here some screenshots how my project will appear
+
 	* Screenshot of JSON file
+	![screenshot 62](https://user-images.githubusercontent.com/45555745/51784933-830c7500-2176-11e9-9599-8f72ed819199.png)
+	
+	* Screenshot of main web page
+	
+
 	
 
