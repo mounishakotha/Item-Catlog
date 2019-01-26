@@ -29,7 +29,7 @@ DBSession = sessionmaker(bind=engine)
 session = DBSession()
 
 
-# creating login session
+# creating login session.
 @app.route('/login')
 def showlogin():
     state = ''.join(random.choice(string.ascii_uppercase + string.digits)
@@ -38,7 +38,7 @@ def showlogin():
     return render_template('login.html', STATE=state)
 
 
-# creating gconnect method
+# creating gconnect method.
 @app.route('/gconnect', methods=['POST'])
 def gconnect():
         if request.args.get('state') != login_session['state']:
@@ -72,7 +72,7 @@ def gconnect():
             response.headers['Content-Type'] = 'application/json'
             return response
 
-        # Verify that the access token.
+        # Verify the access token.
         gplus_id = credentials.id_token['sub']
         if result['user_id'] != gplus_id:
             response = make_response(
@@ -81,7 +81,7 @@ def gconnect():
             response.headers['Content-Type'] = 'application/json'
             return response
 
-        # Verify that the access token is valid for the app.
+        # Verify the access token is valid for the app.
         if result['issued_to'] != CLIENT_ID:
             response = make_response(json.dumps("Token's client ID does not"
                                                 "match app's."), 401)
