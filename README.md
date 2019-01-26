@@ -97,5 +97,8 @@ Open browser and vist  [http://localhost:8000](http://localhost:8000)
 ```
 	/cheese/<int:cheese_id>/JSON
 ```
-
+## Output Screenshots
+* Here some screenshots how my project will appear
+	* Screenshot of JSON file
+	
 
