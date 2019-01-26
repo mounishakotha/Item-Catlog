@@ -10,12 +10,12 @@ session = DBSession()
 user1 = User(name="admin", email="mounisha.nsp@gmail.com")
 session.add(user1)
 session.commit()
-# cheese 1
+# cheese country1
 cheese1 = Cheese(name="Asian cheese", user_id=1)
 
 session.add(cheese1)
 session.commit()
-
+# cheese Item1
 cheeseItem1 = CheeseItem(name="Chhana cheese", description="A fresh, unripened"
                          "curd cheese made from cow or water buffalo milk",
                          price="$25", cheese=cheese1, user_id=1)
@@ -248,7 +248,3 @@ session.add(cheeseItem5)
 session.commit()
 
 print "added cheese items!"
-
-
-
-
