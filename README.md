@@ -104,12 +104,12 @@ Open browser and vist  [http://localhost:8000](http://localhost:8000)
 	![screenshot 62](https://user-images.githubusercontent.com/45555745/51784933-830c7500-2176-11e9-9599-8f72ed819199.png)
 	
 	* Screenshot of main web page
+	
+	![screenshot 53](https://user-images.githubusercontent.com/45555745/51785079-80ab1a80-2178-11e9-97c6-0b579915e9c8.png)
 	![screenshot 63](https://user-images.githubusercontent.com/45555745/51785011-5c027300-2177-11e9-9069-9dcd720000c8.png)
 	![screenshot 57](https://user-images.githubusercontent.com/45555745/51785017-8bb17b00-2177-11e9-90fb-94c0bb2214a0.png)
-
-
-![screenshot 59](https://user-images.githubusercontent.com/45555745/51785047-f19e0280-2177-11e9-8bba-5d787484ede8.png)
-![screenshot 60](https://user-images.githubusercontent.com/45555745/51785050-ffec1e80-2177-11e9-9bfb-03149fea4dd9.png)
+	![screenshot 59](https://user-images.githubusercontent.com/45555745/51785047-f19e0280-2177-11e9-8bba-5d787484ede8.png)
+	![screenshot 60](https://user-images.githubusercontent.com/45555745/51785050-ffec1e80-2177-11e9-9bfb-03149fea4dd9.png)
 
 	
 
