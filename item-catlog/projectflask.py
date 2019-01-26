@@ -66,7 +66,7 @@ def gconnect():
                % access_token)
         h = httplib2.Http()
         result = json.loads(h.request(url, 'GET')[1])
-        # If there was an error in the access token info, abort
+        # If there was an error in the access token info, abort.
         if result.get('error') is not None:
             response = make_response(json.dumps(result.get('error')), 500)
             response.headers['Content-Type'] = 'application/json'
@@ -109,7 +109,7 @@ def gconnect():
         login_session['email'] = data['email']
         login_session['provider'] = 'google'
 
-        # Check if the user is exist or not
+        # Check if the user is exist or not.
         user_id = getUserID(login_session['email'])
         if not user_id:
             user_id = createUser(login_session)
@@ -123,7 +123,7 @@ def gconnect():
         return output
 
 
-# creating new user
+# creating new user.
 def createUser(login_session):
     newUser = User(name=login_session['username'],
                    email=login_session['email'])
@@ -133,13 +133,13 @@ def createUser(login_session):
     return user.id
 
 
-# getting user info
+# getting user info.
 def getUserInfo(user_id):
     user = session.query(User).filter_by(id=user_id).one()
     return user
 
 
-# getting user ID
+# getting user ID.
 def getUserID(email):
     try:
         user = session.query(User).filter_by(email=email).one()
@@ -148,7 +148,7 @@ def getUserID(email):
         return None
 
 
-# disconnect from connected user
+# disconnect from connected user.
 @app.route("/glogout")
 def gdisconnect():
         access_token = login_session.get('access_token')
@@ -182,7 +182,7 @@ def gdisconnect():
             return response
 
 
-# showing in JSON file with specfic country name and its items present in it
+# showing in JSON file with specfic country name and its items present in it.
 @app.route('/cheese/<int:cheese_id>/JSON')
 def cheeseJSON(cheese_id):
     cheese = session.query(Cheese).filter_by(id=cheese_id).all()
@@ -191,7 +191,7 @@ def cheeseJSON(cheese_id):
                    for i in cheese], Items=[i.serialize for i in item])
 
 
-# Login Required function
+# Login Required function.
 def login_required(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
@@ -203,7 +203,7 @@ def login_required(f):
     return decorated_function
 
 
-# show cheese country
+# show cheese country.
 @app.route('/')
 def cheesecon():
     cheese = session.query(Cheese)
@@ -213,7 +213,7 @@ def cheesecon():
         return render_template('showcountry.html', cheese=cheese)
 
 
-# display cheese country
+# display cheese country.
 @app.route('/cheese/')
 def cheesecountry():
     cheese = session.query(Cheese)
@@ -223,7 +223,7 @@ def cheesecountry():
         return render_template('country.html', cheese=cheese)
 
 
-# add cheese country
+# add cheese country.
 @app.route('/cheese/addcheese/', methods=['GET', 'POST'])
 @login_required
 def addcheesecon():
@@ -239,7 +239,7 @@ def addcheesecon():
         return render_template('addcheesecon.html')
 
 
-# Edit a cheese country
+# Edit a cheese country.
 @app.route('/cheese/<int:cheese_id>/edit', methods=['GET', 'POST'])
 @login_required
 def editcheesecon(cheese_id):
@@ -250,7 +250,7 @@ def editcheesecon(cheese_id):
     if 'username' in login_session:
         if login_session['user_id'] == editedch.user_id:
 
-            # POST methods
+            # POST methods.
             if request.method == 'POST':
                 if request.form['name']:
                     editedch.name = request.form['name']
@@ -270,7 +270,7 @@ def editcheesecon(cheese_id):
         return redirect('/login')
 
 
-# Delete a cheese country
+# Delete a cheese country.
 @app.route('/cheese/<int:cheese_id>/delete', methods=['GET', 'POST'])
 @login_required
 def deletecheesecon(cheese_id):
@@ -295,7 +295,7 @@ def deletecheesecon(cheese_id):
         return redirect('/login')
 
 
-# Display cheese items
+# Display cheese items.
 @app.route('/cheese/<int:cheese_id>/display')
 def cheesemenu(cheese_id):
     cheese = session.query(Cheese).filter_by(id=cheese_id).one()
@@ -304,7 +304,7 @@ def cheesemenu(cheese_id):
                            cheese=cheese, item=item)
 
 
-# shows cheese items
+# shows cheese items.
 @app.route('/cheese/<int:cheese_id>/')
 def cheeseMenu(cheese_id):
     cheese = session.query(Cheese).filter_by(id=cheese_id).one()
@@ -313,7 +313,7 @@ def cheeseMenu(cheese_id):
                            cheese=cheese, item=item)
 
 
-# Adding new cheese item
+# Adding new cheese item.
 @app.route('/cheese/<int:cheese_id>/new/', methods=['GET', 'POST'])
 @login_required
 def newcheeseType(cheese_id):
@@ -341,7 +341,7 @@ def newcheeseType(cheese_id):
         return redirect('/login')
 
 
-# Edit cheese item
+# Edit cheese item.
 @app.route('/cheese/<int:cheese_id>/<int:item_id>/edit',
            methods=['GET', 'POST'])
 @login_required
@@ -372,7 +372,7 @@ def editcheeseItem(cheese_id, item_id):
         return redirect('/login')
 
 
-# Delete cheese item
+# Delete cheese item.
 @app.route('/cheese/<int:cheese_id>/<int:item_id>/delete',
            methods=['GET', 'POST'])
 @login_required
@@ -399,6 +399,7 @@ def deletecheeseItem(cheese_id, item_id):
     return
 
 
+# main method.
 if __name__ == '__main__':
     app.secret_key = 'super_secret_key'
     app.debug = True
