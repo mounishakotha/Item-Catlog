@@ -118,7 +118,7 @@ Open browser and vist  [http://localhost:8000](http://localhost:8000)
 	
 	![screenshot 60](https://user-images.githubusercontent.com/45555745/51785050-ffec1e80-2177-11e9-9bfb-03149fea4dd9.png)
 
-	
 
+* I have done this project with the help of my mentor and Uadcity nanodegree course videos.
 	
 
