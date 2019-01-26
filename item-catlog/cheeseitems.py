@@ -23,21 +23,21 @@ cheeseItem1 = CheeseItem(name="Chhana cheese", description="A fresh, unripened"
 session.add(cheeseItem1)
 session.commit()
 
-
+# cheese item2
 cheeseItem2 = CheeseItem(name="Kalari cheese", description="Also known as"
                          "Kiladi or Maish Krej from Kashmiri",
                          price="$30", cheese=cheese1, user_id=1)
 
 session.add(cheeseItem2)
 session.commit()
-
+# cheese item3
 cheeseItem3 = CheeseItem(name="Bandel cheese", description="originated in a"
                          "Portuguese colony Bandel located in eastern India",
                          price="$10", cheese=cheese1, user_id=1)
 
 session.add(cheeseItem3)
 session.commit()
-
+# cheese item4
 cheeseItem4 = CheeseItem(name="Sakura cheese", description="A soft cheese"
                          "created in Japan. It is creamy white and"
                          "flavored with mountain cherry leaves.",
@@ -45,7 +45,7 @@ cheeseItem4 = CheeseItem(name="Sakura cheese", description="A soft cheese"
 
 session.add(cheeseItem4)
 session.commit()
-
+# cheese item5
 cheeseItem5 = CheeseItem(name="Imsil cheese", description="Imsil Cheese"
                          "Village is located near the town of Imsil."
                          "It offers programs lasting for one day or more,"
@@ -55,12 +55,12 @@ cheeseItem5 = CheeseItem(name="Imsil cheese", description="Imsil Cheese"
 session.add(cheeseItem5)
 session.commit()
 
-# cheese 2
+# cheese country2
 cheese2 = Cheese(name="South American cheese", user_id=1)
 
 session.add(cheese2)
 session.commit()
-
+# cheese item1
 cheeseItem1 = CheeseItem(name="Cremoso cheese", description="A fresh"
                          "cheese elaborated with cow's milk, with or"
                          "without the addition of cream.",
@@ -69,7 +69,7 @@ cheeseItem1 = CheeseItem(name="Cremoso cheese", description="A fresh"
 session.add(cheeseItem1)
 session.commit()
 
-
+# cheese item2
 cheeseItem2 = CheeseItem(name="Catupiry cheese", description="A soft,"
                          " mild-tasting cheese that can be spread over toasts,"
                          "crackers and bread buns or used in cooking.",
@@ -77,7 +77,7 @@ cheeseItem2 = CheeseItem(name="Catupiry cheese", description="A soft,"
 
 session.add(cheeseItem2)
 session.commit()
-
+# cheese item3
 cheeseItem3 = CheeseItem(name="Chanco cheese", description="Cow's milk"
                          "cheese originally from the Chanco farm in"
                          "Maule Region.",
@@ -85,7 +85,7 @@ cheeseItem3 = CheeseItem(name="Chanco cheese", description="Cow's milk"
 
 session.add(cheeseItem3)
 session.commit()
-
+# cheese item 4
 cheeseItem4 = CheeseItem(name="Panquehue cheese", description="A semi-soft"
                          "cheese, and often has chives or red pepper flakes"
                          "mixed in.",
@@ -93,7 +93,7 @@ cheeseItem4 = CheeseItem(name="Panquehue cheese", description="A semi-soft"
 
 session.add(cheeseItem4)
 session.commit()
-
+# cheese item 5
 cheeseItem5 = CheeseItem(name="Quesillo cheese", description="In Colombia,"
                          "quesillo is a type of double cream cheese"
                          "wrapped within a plantain leaf.",
@@ -102,20 +102,19 @@ cheeseItem5 = CheeseItem(name="Quesillo cheese", description="In Colombia,"
 session.add(cheeseItem5)
 session.commit()
 
-# cheese 3
+# cheese country 3
 cheese3 = Cheese(name="African cheese", user_id=1)
 
 session.add(cheese3)
 session.commit()
-
+# cheese item1
 cheeseItem1 = CheeseItem(name="Wagasi cheese", description="It is a soft"
                          "cow milk cheese.",
                          price="$20", cheese=cheese3, user_id=1)
 
 session.add(cheeseItem1)
 session.commit()
-
-
+# cheese item2
 cheeseItem2 = CheeseItem(name="Areesh cheese", description="A type of"
                          "white, soft, lactic cheese made from"
                          "laban rayeb.",
@@ -123,7 +122,7 @@ cheeseItem2 = CheeseItem(name="Areesh cheese", description="A type of"
 
 session.add(cheeseItem2)
 session.commit()
-
+# cheese item3
 cheeseItem3 = CheeseItem(name="Domiati cheese", description="A soft"
                          "white cheese usually made from cow or"
                          "buffalo milk. It is salted, heated,"
@@ -134,7 +133,7 @@ cheeseItem3 = CheeseItem(name="Domiati cheese", description="A soft"
 
 session.add(cheeseItem3)
 session.commit()
-
+# cheese item4
 cheeseItem4 = CheeseItem(name="Halumi cheese", description="A semi-hard,"
                          "unripened, brined cheese made from a mixture"
                          "of goat's and sheep's milk, and sometimes"
@@ -143,7 +142,7 @@ cheeseItem4 = CheeseItem(name="Halumi cheese", description="A semi-hard,"
 
 session.add(cheeseItem4)
 session.commit()
-
+# cheese item 5
 cheeseItem5 = CheeseItem(name="Rumi", description="A hard,"
                          "bacterially ripened variety of cheese."
                          "It is salty, with a crumbly texture,"
@@ -153,20 +152,19 @@ cheeseItem5 = CheeseItem(name="Rumi", description="A hard,"
 session.add(cheeseItem5)
 session.commit()
 
-# cheese 4
+# cheese country 4
 cheese4 = Cheese(name="North American cheese", user_id=1)
 
 session.add(cheese4)
 session.commit()
-
+# cheese item 1
 cheeseItem1 = CheeseItem(name="Cheese curds", description="Cheese curds"
                          "are a key ingredient in poutine.",
                          price="$10", cheese=cheese4, user_id=1)
 
 session.add(cheeseItem1)
 session.commit()
-
-
+# cheese item 2
 cheeseItem2 = CheeseItem(name="Oka cheese", description="Originally"
                          "manufactured by the Trappist monks, this"
                          "cheese has a distinct flavour and aroma.",
@@ -174,14 +172,14 @@ cheeseItem2 = CheeseItem(name="Oka cheese", description="Originally"
 
 session.add(cheeseItem2)
 session.commit()
-
+# cheese item 3
 cheeseItem3 = CheeseItem(name="Crema cheese", description="A spreadable,"
                          "unripened white cheese.",
                          price="$20", cheese=cheese4, user_id=1)
 
 session.add(cheeseItem3)
 session.commit()
-
+# cheese item 4
 cheeseItem4 = CheeseItem(name="Anejo cheese", description="A Mexican cheese"
                          "traditionally made from skimmed goat's milk but"
                          "most often available made from skimmed cow's milk.",
@@ -189,7 +187,7 @@ cheeseItem4 = CheeseItem(name="Anejo cheese", description="A Mexican cheese"
 
 session.add(cheeseItem4)
 session.commit()
-
+# cheese item 5
 cheeseItem5 = CheeseItem(name="Chiapas cheese", description="A dry cream"
                          "cheese with a crumbly texture that is formed"
                          "into balls an often has string cheese"
@@ -199,12 +197,12 @@ cheeseItem5 = CheeseItem(name="Chiapas cheese", description="A dry cream"
 session.add(cheeseItem5)
 session.commit()
 
-# cheese 5
+# cheese country 5
 cheese5 = Cheese(name="Sweden cheese", user_id=1)
 
 session.add(cheese5)
 session.commit()
-
+# cheese item 1
 cheeseItem1 = CheeseItem(name="Greve cheese", description="A semi-hard"
                          "Swedish cheese made from cow's milk."
                          "It is similar to Emmental with a mild"
@@ -213,8 +211,7 @@ cheeseItem1 = CheeseItem(name="Greve cheese", description="A semi-hard"
 
 session.add(cheeseItem1)
 session.commit()
-
-
+# cheese item2
 cheeseItem2 = CheeseItem(name="Herrgardsost cheese", description="A"
                          "semi-hard cheese made from cow's milk."
                          "The aged cheese has a mild, sweet, nutty"
@@ -223,7 +220,7 @@ cheeseItem2 = CheeseItem(name="Herrgardsost cheese", description="A"
 
 session.add(cheeseItem2)
 session.commit()
-
+# cheese item 3
 cheeseItem3 = CheeseItem(name="Hushallsost cheese", description="A"
                          "semi-hard cows'-milk cheese with small"
                          "granular holes and aged around 60 days on"
@@ -232,14 +229,14 @@ cheeseItem3 = CheeseItem(name="Hushallsost cheese", description="A"
 
 session.add(cheeseItem3)
 session.commit()
-
+# cheese item 4
 cheeseItem4 = CheeseItem(name="Moose cheese", description="A cheese"
                          "produced in Sweden from moose milk",
                          price="$10.5", cheese=cheese5, user_id=1)
 
 session.add(cheeseItem4)
 session.commit()
-
+# cheese item 5
 cheeseItem5 = CheeseItem(name="Prastost cheese", description="Made from"
                          "pasteurized cow's milk.",
                          price="$5.5", cheese=cheese5, user_id=1)
