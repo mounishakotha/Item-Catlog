@@ -8,6 +8,7 @@ from sqlalchemy import create_engine
 Base = declarative_base()
 
 
+# creating User class.
 class User(Base):
     __tablename__ = 'user'
     id = Column(Integer, primary_key=True)
@@ -15,6 +16,7 @@ class User(Base):
     email = Column(String(250), nullable=False)
 
 
+# creating cheese country base class.
 class Cheese(Base):
     __tablename__ = 'cheese'
     id = Column(Integer, primary_key=True)
@@ -31,6 +33,7 @@ class Cheese(Base):
         }
 
 
+# creating cheese items base class.
 class CheeseItem(Base):
     __tablename__ = 'cheese_item'
     name = Column(String(80), nullable=False)
